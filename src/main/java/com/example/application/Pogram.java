@@ -2,6 +2,8 @@ package com.example.application;
 
 import java.util.Date;
 
+import com.example.model.dao.DaoFactory;
+import com.example.model.dao.SellerDao;
 import com.example.model.entities.Department;
 import com.example.model.entities.Seller;
 
@@ -16,5 +18,10 @@ public class Pogram {
 
         System.out.println(seller);
 
+        System.out.println("-----------------------");
+
+        SellerDao sellerDao = DaoFactory.createSellerDao();
+
+        System.out.println(sellerDao);
     }
 }

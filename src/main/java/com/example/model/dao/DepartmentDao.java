@@ -1,0 +1,11 @@
+package com.example.model.dao;
+
+import com.example.model.entities.Department;
+
+public interface DepartmentDao {
+    
+    void insert(Department obj);
+    void update(Department obj);
+    void deleteById(Integer id);
+    void findById(Integer id);
+}

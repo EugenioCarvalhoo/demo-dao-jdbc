@@ -1,6 +1,7 @@
 package com.example.application;
 
 import java.util.Date;
+import java.util.List;
 
 import com.example.model.dao.DaoFactory;
 import com.example.model.dao.SellerDao;
@@ -15,6 +16,14 @@ public class Pogram {
 
 
         System.out.println(seller);
+        System.out.println("}==============================={");
+
+        Department department = new Department(2, null);
+        List<Seller> list = sellerDao.findByDepartment(department);
+
+        for (Seller sl: list) {
+            System.out.println(sl);
+        }
 
     }
 }

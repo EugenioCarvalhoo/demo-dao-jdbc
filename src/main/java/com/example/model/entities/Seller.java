@@ -95,13 +95,13 @@ public class Seller implements Serializable{
 
     @Override
     public String toString() {
-        return "[" +
-            "[ id='" + getId() + "']" +
-            ",[ name='" + getName() + "']" +
-            ",[ email='" + getEmail() + "']" +
-            ",[ birthDate='" + getBirthDate() + "']" +
-            ",[ baseSalary='" + getBaseSalary() + "']" +
-            ",[ department='" + getDepartment() + "']" +
+        return "\n" +
+            "\n[ id='" + getId() + "']" +
+            "\n[ name='" + getName() + "']" +
+            "\n[ email='" + getEmail() + "']" +
+            "\n[ birthDate='" + getBirthDate() + "']" +
+            "\n[ baseSalary='" + getBaseSalary() + "']" +
+            "\n[ department='" + getDepartment() + "']" +
             "]";
     }
 

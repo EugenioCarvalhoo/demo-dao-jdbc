@@ -44,5 +44,8 @@ public class Pogram {
         seller.setName("Martha Waine");
         sellerDao.update(seller);
         System.out.println("Update comleted!");
+
+        System.out.println("\n==== TEST 5: seller Delete ====");
+        sellerDao.deleteById(10);
     }
 }

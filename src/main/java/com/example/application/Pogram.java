@@ -25,5 +25,13 @@ public class Pogram {
             System.out.println(sl);
         }
 
+        System.out.println("}==============================={");
+        
+        list = sellerDao.findAll();
+
+        for (Seller sl: list) {
+            System.out.println(sl);
+        }
+
     }
 }

@@ -33,5 +33,10 @@ public class Pogram {
             System.out.println(sl);
         }
 
+        System.out.println("}==============================={");
+        Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 2000.0, department);
+
+        sellerDao.insert(newSeller);
+        System.out.println("Inserted! New id = " + newSeller.getId());
     }
 }
